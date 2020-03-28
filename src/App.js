@@ -17,26 +17,6 @@ Amplify.configure(config)
 
 class App extends React.Component {
 
-
-handleSelect(selectedKey, event) {
-    event.preventDefault();
-    this.setState({activeKey: selectedKey});
-}
-
-	
-	constructor(props) {
-    super(props);
-    this.state = {
-      activeKey: 1
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
-
-  _onButtonClick() {
-   this.setState({
-      showComponent: true,
-    });
-  }
   
 	render() {
 		return (
