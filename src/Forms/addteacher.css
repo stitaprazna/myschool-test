@@ -3,3 +3,15 @@ div#chai {
     margin-bottom: 30px;
     text-align: justify;
 }
+
+.form-inline {
+    width: 60%;
+  }
+  .form-group {
+    width: 90%;
+  }
+  
+  .input-group {
+    width: 60% !important;
+  }
+  
