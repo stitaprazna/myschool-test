@@ -3,7 +3,7 @@ import React from "react"
 import './assignstudenttobus.css';
 // --- This is the part to add
 
-import { Form,Button, Navbar,Nav,NavDropdown } from 'react-bootstrap'
+import { Form,Button,Accordion,Card, Navbar,Nav,NavDropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 export default class AssignStudentToBus extends React.Component {
 	render() {
@@ -13,14 +13,30 @@ export default class AssignStudentToBus extends React.Component {
 			<Form.Group controlId="exampleForm.ControlSelect1">
     <Form.Label>Select Bus</Form.Label>
     <Form.Control as="select">
-      <option>Get from DB(Bus)</option>
-      <option>Get from DB(Bus)</option>
-      <option>Get from DB(Bus)</option>
+      <option>Get from DB(BusNumber + Name)</option>
+      <option>Get from DB(BusNumber + Name)</option>
+      <option>Get from DB(BusNumber + Name)</option>
       <option>4</option>
       <option>5</option>
     </Form.Control>
   </Form.Group>
-  <Form.Group controlId="exampleForm.ControlSelect2">
+  
+                
+  
+  
+</Form>
+
+     <Accordion>
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle as={Button} variant="link" eventKey="0">
+        Next
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="0">
+      <Card.Body>
+      <Form>
+      <Form.Group controlId="exampleForm.ControlSelect2">
   <Form.Label>Select Class </Form.Label>
     <Form.Control as="select">
       <option>Get from DB(Class)</option>
@@ -50,12 +66,13 @@ export default class AssignStudentToBus extends React.Component {
       <option>5</option>
     </Form.Control>
   </Form.Group>
+  <Button variant="dark">Submit</Button>
+      </Form>
+      </Card.Body>
+    </Accordion.Collapse>
+  </Card>
   
-                
-  
-  
-</Form>
-      
+</Accordion> 
 </div>
 		)
 	}

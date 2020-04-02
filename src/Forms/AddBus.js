@@ -18,8 +18,13 @@ export default class AddDriver extends React.Component {
     <Form.Control type="Bus Model Name" placeholder="Tata Motors Starbus Skool 30 Bs Iv Cng Bus" />
     <Form.Label>Bus Seating Capacity</Form.Label>
     <Form.Control type="Bus Seating Capacity" placeholder="EX : 30" />
-    <Form.Label>Add Image(Optional)</Form.Label>
-    <Form.Control type="AddImage" placeholder="Upload Image" />
+    <div className="mb-3">
+    <Form.File id="formcheck-api-regular">
+      <Form.File.Label>Add Image</Form.File.Label>
+      <Form.File.Input />
+    </Form.File>
+  </div>
+  <Button variant="dark">Submit</Button>
   </Form.Group>
   
 </Form>

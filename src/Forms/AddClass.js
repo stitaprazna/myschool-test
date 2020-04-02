@@ -13,6 +13,8 @@ export default class AddClass extends React.Component {
   <Form.Group controlId="exampleForm.ControlInput1">
     <Form.Label>Enter Class Name</Form.Label>
     <Form.Control type="Name" placeholder="Example : Nursery, Class 2" />
+	<Button variant="link">Add Another Class Name</Button>{' '}
+	<Button variant="dark">Save</Button>
   </Form.Group>
   
 </Form>

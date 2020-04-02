@@ -30,17 +30,17 @@ export default class AssignClassTeacher extends React.Component {
       <option>5</option>
     </Form.Control>
   </Form.Group>
-  <Form.Group controlId="exampleForm.ControlSelect3">
-    <Form.Label>Select Teacher</Form.Label>
-    <Form.Control as="select" multiple>
-      <option>Get from DB(Teacher)</option>
-      <option>Get from DB(Teacher)</option>
-      <option>3</option>
+  <Form.Group controlId="exampleForm.ControlSelect2">
+  <Form.Label>Select Teacher</Form.Label>
+    <Form.Control as="select">
+      <option>Get from DB(TeacherName(ID))</option>
+      <option>Get from DB(TeacherName(ID))</option>
+      <option>Get from DB(TeacherName(ID))</option>
       <option>4</option>
       <option>5</option>
     </Form.Control>
   </Form.Group>
-                
+  <Button variant="dark">Submit</Button> 
   
   
 </Form>

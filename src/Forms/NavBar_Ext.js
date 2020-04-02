@@ -12,18 +12,23 @@ export default class Navbar_Ext extends React.Component {
             <div>
 
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Navbar.Brand href="#home">Quarantine</Navbar.Brand>
+          <Navbar.Brand href="#home">MySchoolAdmin</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto" >
+
               <NavDropdown title="Subject" id="collasible-nav-dropdown">
               <LinkContainer to="/addsubject" activeClassName="active">
                 <NavDropdown.Item href="Add_Subject_Names">Add Subject Details</NavDropdown.Item>
-                </LinkContainer> 
+                </LinkContainer>
+                <LinkContainer to="/editsubject" activeClassName="active"> 
                 <NavDropdown.Item href="#Edit Subject Details">Edit Subject Details</NavDropdown.Item>
-                <NavDropdown.Item href="List Of Subjects">List Of Subjects</NavDropdown.Item>
+                </LinkContainer>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                <LinkContainer to="/listofsubjects" activeClassName="active">
+                <NavDropdown.Item href="List Of Subjects">List Of Subjects</NavDropdown.Item>
+                </LinkContainer>
+
               </NavDropdown>
               <NavDropdown title="Class" id="collasible-nav-dropdown" >
               <LinkContainer to="/addclass" activeClassName="active">
@@ -32,64 +37,97 @@ export default class Navbar_Ext extends React.Component {
                 <LinkContainer to="/addsection" activeClassName="active">
                 <NavDropdown.Item href="Add_Section_Details">Add Section Details</NavDropdown.Item>
                 </LinkContainer>
-                <NavDropdown.Item href="#Edit Class Details">Edit Class Details</NavDropdown.Item>
-                <NavDropdown.Item href="#Edit Section Details">Edit Section Details</NavDropdown.Item>
-                <NavDropdown.Item href="List Of Classes">List Of Teacher</NavDropdown.Item>
+                <LinkContainer to="/editclass" activeClassName="active">
+                <NavDropdown.Item href="#Edit_Class_Details">Edit Class/Section Details</NavDropdown.Item>
+                </LinkContainer>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                <LinkContainer to="/listofclasses" activeClassName="active">
+                <NavDropdown.Item href="List Of Classes">List Of Classes</NavDropdown.Item>
+                </LinkContainer>
               </NavDropdown>
+              
               <NavDropdown title="Faculty" id="collasible-nav-dropdown">
               <LinkContainer to="/addteacher" activeClassName="active">
                 <NavDropdown.Item href="Add_Teacher_Details">Add Teacher Details</NavDropdown.Item>
                 </LinkContainer>
-                <NavDropdown.Item href="#Edit Teacher Details">Edit Teacher Details</NavDropdown.Item>
+                <LinkContainer to="/editteacher" activeClassName="active">
+                <NavDropdown.Item href="#Edit_Teacher_Details">Edit Teacher Details</NavDropdown.Item>
+                </LinkContainer>
               <LinkContainer to="/assignclassteacher" activeClassName="active">
                 <NavDropdown.Item href="Assign_Class_Teacher">Assign Class Teacher</NavDropdown.Item>
               </LinkContainer>
-                <NavDropdown.Item href="List Of Teachers">List Of Teachers</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                <LinkContainer to="/listofteachers" activeClassName="active">
+                <NavDropdown.Item href="List_Of_Teachers">List Of Teachers</NavDropdown.Item>
+                </LinkContainer>
               </NavDropdown>
+
               <NavDropdown title="Students" id="collasible-nav-dropdown">
               <LinkContainer to="/addstudent" activeClassName="active">
                 <NavDropdown.Item href="Add_Student_Details">Add Student Details</NavDropdown.Item>
                 </LinkContainer>
-                <NavDropdown.Item href="#Edit Student Details">Edit Student Details</NavDropdown.Item>
-                <NavDropdown.Item href="List Of Students">List Of Students</NavDropdown.Item>
+              <LinkContainer to="/editstudent" activeClassName="active">
+                <NavDropdown.Item href="#Edit_Student_Details">Edit Student Details</NavDropdown.Item>
+                </LinkContainer>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                <LinkContainer to="/listofstudents" activeClassName="active">
+                <NavDropdown.Item href="List Of Students">List Of Students</NavDropdown.Item> 
+                </LinkContainer>             
               </NavDropdown>
+
+
               <NavDropdown title="Transport" id="collasible-nav-dropdown">
               <LinkContainer to="/adddriver" activeClassName="active">
                 <NavDropdown.Item href="Add_Driver_Details">Add Driver Details</NavDropdown.Item>
-              </LinkContainer> 
-                <NavDropdown.Item href="#Edit Driver Details">Edit Driver Details</NavDropdown.Item>
-                <LinkContainer to="/addbus" activeClassName="active">
+              </LinkContainer>              
+               <LinkContainer to="/addbus" activeClassName="active">
                 <NavDropdown.Item href="Add_Bus_Details">Add Bus Details</NavDropdown.Item>
                 </LinkContainer>
-                <NavDropdown.Item href="#Edit Bus Details">Edit Bus Details</NavDropdown.Item>
                 <LinkContainer to="/assigndrivertobus" activeClassName="active">
                 <NavDropdown.Item href="Assign_Driver_to_Bus">Assign Driver to Bus</NavDropdown.Item>
                 </LinkContainer>
-                <NavDropdown.Item href="#Edit Driver to Bus">Edit Driver to Bus</NavDropdown.Item>
                 <LinkContainer to="/assignstudenttobus" activeClassName="active">
                 <NavDropdown.Item href="Assign_Student_to_Bus">Assign Student to Bus</NavDropdown.Item>
                 </LinkContainer>
-                <NavDropdown.Item href="#Edit Student to Bus">Edit Student to Bus</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                <LinkContainer to="/editdriver" activeClassName="active">
+                <NavDropdown.Item href="#Edit_Driver_Details">Edit Driver Details</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/editbus" activeClassName="active">
+                <NavDropdown.Item href="#Edit_Bus_Details">Edit Bus Details</NavDropdown.Item>
+                </LinkContainer>                
+                <LinkContainer to="/editassigndrivertobus" activeClassName="active">
+                <NavDropdown.Item href="Edit_Assign_Driver_to_Bus">Edit Assign Driver to Bus</NavDropdown.Item>
+                </LinkContainer>              
+                <LinkContainer to="/editassignstudenttobus" activeClassName="active">
+                <NavDropdown.Item href="#Edit_Assign_Student_to_Bus">Edit Assign Student to Bus</NavDropdown.Item>
+                </LinkContainer>
+                    <NavDropdown.Divider />
+                <LinkContainer to="/listofdrivers" activeClassName="active">    
                 <NavDropdown.Item href="List Of Drivers">List Of Drivers</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/listofbus" activeClassName="active">
                 <NavDropdown.Item href="List Of Bus">List Of Bus</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/listofdriverstobus" activeClassName="active">
+                <NavDropdown.Item href="List Of Drivers To Bus">List Of Drivers To Bus</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/listofStudentsToBus" activeClassName="active">
                 <NavDropdown.Item href="List Of Students To Bus">List Of Students To Bus</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                </LinkContainer>
               </NavDropdown>
-              <NavDropdown title="Other Staff" id="collasible-nav-dropdown">
-              <LinkContainer to="/addstaff" activeClassName="active">  
-                <NavDropdown.Item href="Add_Staff_Details">Add Staff Details</NavDropdown.Item>
+              
+              <NavDropdown title="Employees" id="collasible-nav-dropdown">
+              <LinkContainer to="/addemployee" activeClassName="active">  
+                <NavDropdown.Item href="Add_Employee_Details">Add Employee Details</NavDropdown.Item>
               </LinkContainer>
-                <NavDropdown.Item href="#Edit Staff Details">Edit Staff Details</NavDropdown.Item>
-                <NavDropdown.Item href="List Of Staff">List Of Staff</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              <LinkContainer to="/editemployee" activeClassName="active">
+                <NavDropdown.Item href="#Edit_Employee_Details">Edit Employee Details</NavDropdown.Item>
+              </LinkContainer>
+              <NavDropdown.Divider />
+              <LinkContainer to="/listofemployees" activeClassName="active">
+                <NavDropdown.Item href="List Of Employees">List Of Employees</NavDropdown.Item>
+              </LinkContainer> 
               </NavDropdown>
               </Nav>
                 </Navbar.Collapse>

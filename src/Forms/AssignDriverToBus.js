@@ -13,9 +13,9 @@ export default class AssignDriverToBus extends React.Component {
 			<Form.Group controlId="exampleForm.ControlSelect1">
     <Form.Label>Select Bus</Form.Label>
     <Form.Control as="select">
-      <option>Get from DB(Bus)</option>
-      <option>Get from DB(Bus)</option>
-      <option>Get from DB(Bus)</option>
+      <option>Get from DB(BusNum + Name)</option>
+      <option>Get from DB(BusNum + Name)</option>
+      <option>Get from DB(BusNum + Name)</option>
       <option>4</option>
       <option>5</option>
     </Form.Control>
@@ -23,13 +23,14 @@ export default class AssignDriverToBus extends React.Component {
   <Form.Group controlId="exampleForm.ControlSelect2">
   <Form.Label>Select Driver</Form.Label>
     <Form.Control as="select">
-      <option>Get from DB(Driver)</option>
-      <option>Get from DB(Driver)</option>
-      <option>Get from DB(Driver)</option>
+      <option>Get from DB(DriverName + EmpID)</option>
+      <option>Get from DB(DriverName + EmpID)</option>
+      <option>Get from DB(DriverName + EmpID)</option>
       <option>4</option>
       <option>5</option>
     </Form.Control>
   </Form.Group>
+  <Button variant="dark">Submit</Button>
   
                 
   
