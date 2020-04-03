@@ -3,7 +3,7 @@ import { Route, RouteHandler, Link, BrowserRouter as Router, Switch } from 'reac
 import { LinkContainer } from 'react-router-bootstrap';
 // --- This is the part to add
 
-import { Form,Button, Navbar,Nav,NavDropdown } from 'react-bootstrap'
+import { Form,Button,Card,Container,Row,Col, Navbar,Nav,NavDropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 export default class Navbar_Ext extends React.Component {
 	render() {
@@ -12,7 +12,9 @@ export default class Navbar_Ext extends React.Component {
             <div>
 
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <LinkContainer to="/home" activeClassName="active">
           <Navbar.Brand href="#home">MySchoolAdmin</Navbar.Brand>
+           </LinkContainer>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto" >
@@ -134,6 +136,8 @@ export default class Navbar_Ext extends React.Component {
                 
             
             </Navbar>
+
+
             
         </div>
         

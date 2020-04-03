@@ -1,5 +1,7 @@
 import React from "react";
 
+import NavBar_Ext from './Forms/NavBar_Ext';
+
 import AddSubject from './Forms/AddSubject';
 import EditSubject from './Forms/EditSubject';
 import ListOfSubjects from './Forms/ListOfSubjects';
@@ -38,12 +40,32 @@ import AddEmployee from './Forms/AddEmployee';
 import EditEmployee from './Forms/EditEmployee';
 import ListOfEmployees from './Forms/ListOfEmployees';
 
+
+// --- Cards
+import Cards_Ext from './Forms/Cards_Ext';
+ 
+import TakeTeacherAttendance from './Forms/Cards/Teacher/TakeTeacherAttendance';
+import EditTeacherAttendance from './Forms/Cards/Teacher/EditTeacherAttendance';
+import TeacherProfile from './Forms/Cards/Teacher/TeacherProfile';
+
+import WriteCircular from './Forms/Cards/Circular/WriteCircular';
+import EditCircular from './Forms/Cards/Circular/EditCircular';
+
+import ViewStudentAttendance from './Forms/Cards/StudentAttendance/ViewStudentAttendance';
+import StudentAbsenteesList from './Forms/Cards/StudentAttendance/StudentAbsenteesList';
+
+import UploadStudyMaterial from './Forms/Cards/StudyMaterial/UploadStudyMaterial';
+import EditStudyMaterial from './Forms/Cards/StudyMaterial/EditStudyMaterial';
+
 import { Route, RouteHandler, Link, BrowserRouter as Router,Switch } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 // --- This is the part to add
-import NavBar_Ext from './Forms/NavBar_Ext'
+
+
 import { Button, Navbar,Nav,NavDropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 
@@ -97,14 +119,38 @@ class App extends React.Component {
           <Route path="/addemployee" component={AddEmployee} />
           <Route path="/editemployee" component={EditEmployee} />
           <Route path="/listofemployees" component={ListOfEmployees} />
+
+
+          
         </Switch>
       </Router>
+
+      <Router>     
+      <Cards_Ext />
+        <Switch>
+          <Route path="/taketeacherattendance" component={TakeTeacherAttendance} />
+          <Route path="/editteacherattendance" component={EditTeacherAttendance} />
+          <Route path="/teacherprofile" component={TeacherProfile} />
+
+          <Route path="/writecircular" component={WriteCircular} />
+          <Route path="/editcircular" component={EditCircular} />
+
+          <Route path="/viewstudentattendance" component={ViewStudentAttendance} />
+          <Route path="/studentabsenteeslist" component={StudentAbsenteesList} />
+
+          <Route path="/uploadstudymaterial" component={UploadStudyMaterial} />
+          <Route path="/editstudymaterial" component={EditStudyMaterial} />
+        </Switch>
+       </Router> 
+
+
+
       
       
 </div>
 
-
-
+     
+        
 
 
 		)
