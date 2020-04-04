@@ -57,6 +57,8 @@ import StudentAbsenteesList from './Forms/Cards/StudentAttendance/StudentAbsente
 import UploadStudyMaterial from './Forms/Cards/StudyMaterial/UploadStudyMaterial';
 import EditStudyMaterial from './Forms/Cards/StudyMaterial/EditStudyMaterial';
 
+import CreateEvents from './Forms/Cards/Events/CreateEvents';
+
 import { Route, RouteHandler, Link, BrowserRouter as Router,Switch } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 // --- This is the part to add
@@ -140,6 +142,8 @@ class App extends React.Component {
 
           <Route path="/uploadstudymaterial" component={UploadStudyMaterial} />
           <Route path="/editstudymaterial" component={EditStudyMaterial} />
+
+          <Route path="/createevents" component={CreateEvents} />
         </Switch>
        </Router> 
 

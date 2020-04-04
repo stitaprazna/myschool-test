@@ -45,6 +45,9 @@ export default class AddTeacher extends React.Component {
       <option>5</option>
     </Form.Control>
   </Form.Group>
+
+  <Form.Label>EmployeeID</Form.Label>
+  <Form.Control type="EmlpoyeeID" placeholder="EmployeeID" />
   
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Bio Of Teacher</Form.Label>

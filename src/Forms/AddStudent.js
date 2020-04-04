@@ -56,7 +56,10 @@ export default class AddStudent extends React.Component {
                     </Form.Control>
                   </Form.Group> 
                   </Form.Group>
-
+                  <Form.Label>D.O.B</Form.Label>
+                    <Form.Control type="D.O.B" placeholder="D.O.B" />
+                    <Form.Label>StudentID</Form.Label>
+                    <Form.Control type="StudentID" placeholder="EX : 1210411426" />
                     <Form.Label>Parent/Gaurdian Name</Form.Label>
                     <Form.Control type="Parent/Guardian Name" placeholder="Parent/Guardain Name" />
                     <Form.Label>Parent/Gaurdian Mobile Number</Form.Label>
