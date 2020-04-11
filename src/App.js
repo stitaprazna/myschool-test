@@ -2,43 +2,43 @@ import React from "react";
 
 import NavBar_Ext from './Forms/NavBar_Ext';
 
-import AddSubject from './Forms/AddSubject';
-import EditSubject from './Forms/EditSubject';
-import ListOfSubjects from './Forms/ListOfSubjects';
+import AddSubject from './Forms/NavBar/Subject/AddSubject';
+import EditSubject from './Forms/NavBar/Subject/EditSubject';
+import ListOfSubjects from './Forms/NavBar/Subject/ListOfSubjects';
 
-import AddClass from './Forms/AddClass';
-import AddSection from './Forms/AddSection';
-import EditClass from './Forms/EditClass';
-import ListOfClasses from './Forms/ListOfClasses';
+import AddClass from './Forms/NavBar/Class/AddClass';
+import AddSection from './Forms/NavBar/Class/AddSection';
+import EditClass from './Forms/NavBar/Class/EditClass';
+import ListOfClasses from './Forms/NavBar/Class/ListOfClasses';
 
-import AddTeacher from './Forms/AddTeacher';
-import EditTeacher from './Forms/EditTeacher';
-import AssignClassTeacher from './Forms/AssignClassTeacher';
-import ListOfTeachers from './Forms/ListOfTeachers';
+import AddTeacher from './Forms/NavBar/Teacher/AddTeacher';
+import EditTeacher from './Forms/NavBar/Teacher/EditTeacher';
+import AssignClassTeacher from './Forms/NavBar/Teacher/AssignClassTeacher';
+import ListOfTeachers from './Forms/NavBar/Teacher/ListOfTeachers';
 
-import AddStudent from './Forms/AddStudent';
-import EditStudent from './Forms/EditStudent';
-import ListOfStudents from './Forms/ListOfStudents';
+import AddStudent from './Forms/NavBar/Student/AddStudent';
+import EditStudent from './Forms/NavBar/Student/EditStudent';
+import ListOfStudents from './Forms/NavBar/Student/ListOfStudents';
 
-import AddDriver from './Forms/AddDriver';
-import EditDriver from './Forms/EditDriver';
-import ListOfDrivers from './Forms/ListOfDrivers';
+import AddDriver from './Forms/NavBar/Driver/AddDriver';
+import EditDriver from './Forms/NavBar/Driver/EditDriver';
+import ListOfDrivers from './Forms/NavBar/Driver/ListOfDrivers';
 
-import AddBus from './Forms/AddBus';
-import EditBus from './Forms/EditBus';
-import ListOfBus from './Forms/ListOfBus';
+import AddBus from './Forms/NavBar/Bus/AddBus';
+import EditBus from './Forms/NavBar/Bus/EditBus';
+import ListOfBus from './Forms/NavBar/Bus/ListOfBus';
 
-import AssignDriverToBus from './Forms/AssignDriverToBus';
-import EditAssignDriverToBus from './Forms/EditAssignDriverToBus';
-import ListOfDriversToBus from './Forms/ListOfDriversToBus'; 
+import AssignDriverToBus from './Forms/NavBar/DriverToBus/AssignDriverToBus';
+import EditAssignDriverToBus from './Forms/NavBar/DriverToBus/EditAssignDriverToBus';
+import ListOfDriversToBus from './Forms/NavBar/DriverToBus/ListOfDriversToBus'; 
 
-import AssignStudentToBus from './Forms/AssignStudentToBus';
-import EditAssignStudentToBus from './Forms/EditAssignStudentToBus';
-import ListOfStudentsToBus from './Forms/ListOfStudentsToBus'; 
+import AssignStudentToBus from './Forms/NavBar/StudentToBus/AssignStudentToBus';
+import EditAssignStudentToBus from './Forms/NavBar/StudentToBus/EditAssignStudentToBus';
+import ListOfStudentsToBus from './Forms/NavBar/StudentToBus/ListOfStudentsToBus'; 
 
-import AddEmployee from './Forms/AddEmployee';
-import EditEmployee from './Forms/EditEmployee';
-import ListOfEmployees from './Forms/ListOfEmployees';
+import AddEmployee from './Forms/NavBar/Employee/AddEmployee';
+import EditEmployee from './Forms/NavBar/Employee/EditEmployee';
+import ListOfEmployees from './Forms/NavBar/Employee/ListOfEmployees';
 
 
 // --- Cards
@@ -56,6 +56,16 @@ import StudentAbsenteesList from './Forms/Cards/StudentAttendance/StudentAbsente
 
 import UploadStudyMaterial from './Forms/Cards/StudyMaterial/UploadStudyMaterial';
 import EditStudyMaterial from './Forms/Cards/StudyMaterial/EditStudyMaterial';
+
+import UploadModelQuestionPapers from './Forms/Cards/ModelQuestionPapers/UploadModelQuestionPapers';
+
+
+import UploadMedia from './Forms/Cards/Media/UploadMedia';
+import EditMedia from './Forms/Cards/Media/EditMedia';
+import EditMediaEdit from './Forms/Cards/Media/EditMediaEdit';
+import EditMediaDelete from './Forms/Cards/Media/EditMediaDelete';
+
+import PayFees from './Forms/Cards/Fees/PayFees';
 
 import CreateEvents from './Forms/Cards/Events/CreateEvents';
 
@@ -122,6 +132,7 @@ class App extends React.Component {
           <Route path="/editemployee" component={EditEmployee} />
           <Route path="/listofemployees" component={ListOfEmployees} />
 
+         
 
           
         </Switch>
@@ -143,7 +154,17 @@ class App extends React.Component {
           <Route path="/uploadstudymaterial" component={UploadStudyMaterial} />
           <Route path="/editstudymaterial" component={EditStudyMaterial} />
 
+          <Route path="/uploadmodelquestionpapers" component={UploadModelQuestionPapers} />
+
+          <Route path="/uploadmedia" component={UploadMedia} />
+          <Route path="/editmedia" component={EditMedia} />
+          <Route path="/editmediaedit" component={EditMediaEdit} />
+          <Route path="/editmediadelete" component={EditMediaDelete} />
+
           <Route path="/createevents" component={CreateEvents} />
+
+
+          <Route path="/payfees" component={PayFees} />
         </Switch>
        </Router> 
 

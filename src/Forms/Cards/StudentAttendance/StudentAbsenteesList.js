@@ -3,7 +3,7 @@ import React from "react"
 import './studentabsenteeslist.css';
 // --- This is the part to add
 
-import { Form,Button,Table,Tabs,Tab,Figure, Navbar,Nav,NavDropdown } from 'react-bootstrap'
+import { Form,Button,Table,Tabs,Tab,Figure,Badge, Navbar,Nav,NavDropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 export default class StudentAbsenteesList extends React.Component {
 	render() {
@@ -57,7 +57,9 @@ export default class StudentAbsenteesList extends React.Component {
                             <td>Male</td>
                             <td>Parent</td>
                             <td>9394952999</td>
-                            <td>Absent</td>
+                            <td>
+                            <Badge variant="danger">Absent</Badge>
+                            </td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -68,7 +70,9 @@ export default class StudentAbsenteesList extends React.Component {
                             <td>Female</td>
                             <td>Parent</td>
                             <td>9999999999</td>
-                            <td>Absent</td>
+                            <td>
+                            <Badge variant="danger">Absent</Badge>
+                            </td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -79,7 +83,9 @@ export default class StudentAbsenteesList extends React.Component {
                             <td>Male</td>
                             <td>Parent</td>
                             <td>9999999999</td>
-                            <td>Absent</td>
+                            <td>
+                            <Badge variant="danger">Absent</Badge>
+                            </td>
                         </tr>
                         </tbody>
                     </Table>
@@ -107,7 +113,9 @@ export default class StudentAbsenteesList extends React.Component {
                             <td>Male</td>
                             <td>RamPrasad</td>
                             <td>9246666999</td>
-                            <td>Absent</td>
+                            <td>
+                            <Badge variant="danger">Absent</Badge>
+                            </td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -118,7 +126,9 @@ export default class StudentAbsenteesList extends React.Component {
                             <td>Female</td>
                             <td>Parent</td>
                             <td>GetfromDB(MobileNumber)</td>  
-                            <td>Absent</td>    
+                            <td>
+                            <Badge variant="danger">Absent</Badge>
+                            </td>    
                         </tr>
                         <tr>
                             <td>3</td>
@@ -129,7 +139,9 @@ export default class StudentAbsenteesList extends React.Component {
                             <td>Gender</td>
                             <td>Parent</td>
                             <td>GetFromDB(MobileNumber)</td>
-                            <td>Absent</td>                               
+                            <td>
+                            <Badge variant="danger">Absent</Badge>
+                            </td>                               
                         </tr>
                         </tbody>
                     </Table>
@@ -157,7 +169,9 @@ export default class StudentAbsenteesList extends React.Component {
                             <td>Female</td> 
                             <td>ParentName</td>
                             <td>GetFromDB(MobileNumber)</td> 
-                            <td>Absent</td>                          
+                            <td>
+                            <Badge variant="danger">Absent</Badge>
+                            </td>                         
                         </tr>
                         <tr>
                             <td>2</td>
@@ -168,7 +182,9 @@ export default class StudentAbsenteesList extends React.Component {
                             <td>Female</td>
                             <td>ParentName</td>
                             <td>GetFromDB(MobileNumber)</td>
-                            <td>Absent</td>   
+                            <td>
+                            <Badge variant="danger">Absent</Badge>
+                            </td>   
                         </tr>
                         <tr>
                             <td>3</td>
@@ -179,7 +195,9 @@ export default class StudentAbsenteesList extends React.Component {
                             <td>Get Gender</td>  
                             <td>ParentName</td>
                             <td>GetFromDB(MobileNumber)</td> 
-                            <td>Absent</td>                           
+                            <td>
+                            <Badge variant="danger">Absent</Badge>
+                            </td>                           
                         </tr>
                         </tbody>
                     </Table>

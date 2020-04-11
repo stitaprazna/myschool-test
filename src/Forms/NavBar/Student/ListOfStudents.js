@@ -1,16 +1,19 @@
 import React from "react"
 
-import './viewstudentattendance.css';
+import './listofstudents.css';
 // --- This is the part to add
 
-import { Form,Button,Table,Tabs,Tab,Figure,FormControl,Badge, Navbar,Nav,NavDropdown } from 'react-bootstrap'
+import { Form,Button,Table,Tabs,Tab,Figure, Navbar,Nav,NavDropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-export default class viewtsudentattendance extends React.Component {
+export default class listofstudents extends React.Component {
 	render() {
 		return (
 		<div id = "chai">
-
-          <Form>
+            
+            <Form>
+            <Tabs defaultActiveKey="Home" transition={false} id="noanim-tab-example">
+                <Tab eventKey="List" title="List">
+                <Form>
                   <Form.Group controlId="exampleForm.ControlSelect1">
                 <Form.Label>Select Class</Form.Label>
                 <Form.Control as="select">
@@ -31,13 +34,7 @@ export default class viewtsudentattendance extends React.Component {
                 <option>5</option>
                 </Form.Control>
             </Form.Group>
-
-            <Form inline>
-                <FormControl type="text" placeholder="StudentName,StudentID" className="mr-sm-2" />
-                <Button variant="outline-primary">Search</Button>
-                </Form>
-
-            <Button variant="link">Download The List</Button>
+            <Button variant="link">Download The List Of Students</Button>
                   <div>
                     <Table responsive="sm">
                         <thead>
@@ -48,7 +45,6 @@ export default class viewtsudentattendance extends React.Component {
                         <th>Student Name</th>
                         <th>Student ID</th>
                         <th>Gender</th>
-                        <th>Attendance Status</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -59,9 +55,6 @@ export default class viewtsudentattendance extends React.Component {
                             <td>Chaitanya</td>
                             <td>20123325</td>
                             <td>Male</td>
-                            <td>
-                            <Badge variant="success">Present</Badge>{' '}
-                            </td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -70,7 +63,6 @@ export default class viewtsudentattendance extends React.Component {
                             <td>GetfromDB(StudentName)</td>
                             <td>Student_ID</td>
                             <td>Female</td>
-                            <td>GetStatus</td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -79,7 +71,6 @@ export default class viewtsudentattendance extends React.Component {
                             <td>GetfromDB(StudentName)</td>
                             <td>Student_ID</td>
                             <td>Male</td>
-                            <td>GetStatus</td>
                         </tr>
                         </tbody>
                     </Table>
@@ -92,7 +83,6 @@ export default class viewtsudentattendance extends React.Component {
                         <th>Student Name</th>
                         <th>Student ID</th>
                         <th>Gender</th>
-                        <th>Attendance Status</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -103,7 +93,6 @@ export default class viewtsudentattendance extends React.Component {
                             <td>Siddu</td>
                             <td>20122326</td>
                             <td>Male</td>
-                            <td>Present</td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -111,10 +100,7 @@ export default class viewtsudentattendance extends React.Component {
                             <td>GetfromDB(Section)</td>
                             <td>GetfromDB(StudentName)</td>
                             <td>Student_ID</td>
-                            <td>Female</td>  
-                            <td>
-                            <Badge variant="success">Present</Badge>{' '}
-                            </td>    
+                            <td>Female</td>      
                         </tr>
                         <tr>
                             <td>3</td>
@@ -122,8 +108,7 @@ export default class viewtsudentattendance extends React.Component {
                             <td>GetfromDB(Section)</td>
                             <td>GetfromDB(StudentName)</td>
                             <td>Student_ID</td>
-                            <td>Gender</td>
-                            <td>GetStatus</td>                               
+                            <td>Gender</td>                               
                         </tr>
                         </tbody>
                     </Table>
@@ -135,8 +120,7 @@ export default class viewtsudentattendance extends React.Component {
                         <th>Section Name</th>
                         <th>Student Name</th>
                         <th>Student ID</th>
-                        <th>Gender</th> 
-                        <th>Attendance Status</th>
+                        <th>Gender</th>                           
                         </tr>
                         </thead>
                         <tbody>
@@ -146,10 +130,7 @@ export default class viewtsudentattendance extends React.Component {
                             <td>A</td>
                             <td>Sahithi</td>
                             <td>20122327</td>
-                            <td>Female</td>  
-                            <td>
-                            <Badge variant="danger">Absent</Badge>
-                            </td>                          
+                            <td>Female</td>                            
                         </tr>
                         <tr>
                             <td>2</td>
@@ -157,12 +138,7 @@ export default class viewtsudentattendance extends React.Component {
                             <td>GetfromDB(Section)</td>
                             <td>GetfromDB(StudentName)</td>
                             <td>Student_ID</td>
-                            <td>Female</td>
-                            <td>
-                            <td>
-                            <Badge variant="success">Present</Badge>
-                            </td>
-                                </td>   
+                            <td>Female</td>   
                         </tr>
                         <tr>
                             <td>3</td>
@@ -170,18 +146,90 @@ export default class viewtsudentattendance extends React.Component {
                             <td>GetfromDB(Section)</td>
                             <td>GetfromDB(StudentName)</td>
                             <td>Student_ID</td>
-                            <td>Get Gender</td>   
-                            <td>
-                            <Badge variant="danger">Absent</Badge>
-                            </td>                           
+                            <td>Gender</td>                              
                         </tr>
                         </tbody>
                     </Table>
                     
                     </div>
             </Form>
+                            </Tab>
+                            <Tab eventKey="profiles" title="Profiles">
+                            <Form.Group controlId="exampleForm.ControlSelect1">
+                                <Form.Label>Select Class</Form.Label>
+                                <Form.Control as="select">
+                                <option>Get from DB(class)</option>
+                                <option>Get from DB(class)</option>
+                                <option>Get from DB(class)</option>
+                                <option>4</option>
+                                <option>5</option>
+                                </Form.Control>
+                            </Form.Group>
+                            <Form.Group controlId="exampleForm.ControlSelect2">
+                            <Form.Label>Select Section</Form.Label>
+                                <Form.Control as="select">
+                                <option>Get from DB(section)</option>
+                                <option>Get from DB(section)</option>
+                                <option>Get from DB(section)</option>
+                                <option>4</option>
+                                <option>5</option>
+                                </Form.Control>
+                            </Form.Group>
+                            <Button variant="link">Download The List with profiles</Button>
+                            
+                            <Figure>
+                              <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src="holder.js/171x180"
+                              />
+                              <Figure.Caption>
+                                Class Name :
+                                Section A :
+                                Name : FirstName + LastName
+                                Gender :
+                                Parent/Gaurdian Name : 
+                                Parent/Gaurdian Mobile Number : 
+                                e-mail :
+                                Address :
+                                LandMark :
+                                Transport : 
+                              </Figure.Caption>
+                            </Figure>
 
-            </div>
+                            <Figure>
+                              <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src="holder.js/171x180"
+                              />
+                              <Figure.Caption>
+                              Class Name :
+                                Section A :
+                                Name : FirstName + LastName
+                                Gender
+                                Parent/Gaurdian Name : 
+                                Parent/Gaurdian Mobile Number : 
+                                e-mail :
+                                Address :
+                                LandMark :
+                                Transport : 
+                              </Figure.Caption>
+                            </Figure>
+                                
+                            </Tab>
+                            
+                            </Tabs>
+                            
+
+
+            </Form>
+
+
+
+</div>
 		)
 	}
 }

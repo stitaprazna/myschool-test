@@ -170,7 +170,7 @@ export default class Cards_Ext extends React.Component {
                           <Card.Text>
                             Upload Model Question Papers 
                           </Card.Text>
-                          <LinkContainer to="/uploadmodelquestionpaper" activeClassName="active">
+                          <LinkContainer to="/uploadmodelquestionpapers" activeClassName="active">
                           <Card.Link href="#">Upload</Card.Link>
                           </LinkContainer>
                           <LinkContainer to="/editmodelquestionpaper" activeClassName="active">
