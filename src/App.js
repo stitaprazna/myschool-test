@@ -7,7 +7,6 @@ import EditSubject from './Forms/NavBar/Subject/EditSubject';
 import ListOfSubjects from './Forms/NavBar/Subject/ListOfSubjects';
 
 import AddClass from './Forms/NavBar/Class/AddClass';
-import AddSection from './Forms/NavBar/Class/AddSection';
 import EditClass from './Forms/NavBar/Class/EditClass';
 import ListOfClasses from './Forms/NavBar/Class/ListOfClasses';
 
@@ -98,7 +97,6 @@ class App extends React.Component {
           <Route path="/listofsubjects" component={ListOfSubjects} />
 
           <Route path="/addclass" component={AddClass} />
-          <Route path="/addsection" component={AddSection} />
           <Route path="/editclass" component={EditClass} />
           <Route path="/listofclasses" component={ListOfClasses} />
 

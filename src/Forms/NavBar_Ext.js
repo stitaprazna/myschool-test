@@ -36,9 +36,6 @@ export default class Navbar_Ext extends React.Component {
               <LinkContainer to="/addclass" activeClassName="active">
                 <NavDropdown.Item href="Add_Class_Details" >Add Class Details</NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/addsection" activeClassName="active">
-                <NavDropdown.Item href="Add_Section_Details">Add Section Details</NavDropdown.Item>
-                </LinkContainer>
                 <LinkContainer to="/editclass" activeClassName="active">
                 <NavDropdown.Item href="#Edit_Class_Details">Edit Class/Section Details</NavDropdown.Item>
                 </LinkContainer>
